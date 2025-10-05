@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="images/profile.jpg" alt="">
+    <title>Professional Profile of Risana Kelly Siweya</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .profile-info p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Main content styles */
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        /* Links section */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .link-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #3498db;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .link-card a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .link-icon {
+            font-size: 24px;
+            color: #3498db;
+        }
+        
+        /* Sound notification */
+        .sound-notification {
+            background: #e8f4fc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+        
+        .sound-notification p {
+            margin-bottom: 0;
+            color: #2c3e50;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        /* Hidden audio element */
+        #background-sound {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-header">
+                <img src="images/profile.jpg" alt="Profile Picture" class="profile-image">
+                <div class="profile-info">
+                    <h1>Risana Kelly Siweya</h1>
+                    <p>Software Developer & AI Enthusiast</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main>
+            <section class="about-section">
+                <h2>About My Career Interests</h2>
+                <p>I'm passionate about software development with a focus on creating innovative solutions that solve real-world problems. My primary interests lie in artificial intelligence, machine learning, and full-stack web development.</p>
+                
+                <p>In the field of AI, I'm particularly fascinated by natural language processing and computer vision applications. I believe that AI has the potential to revolutionize industries from healthcare to finance, and I want to be at the forefront of this transformation.</p>
+                
+                <p>As a full-stack developer, I enjoy working with modern technologies like React, Node.js, and cloud platforms. I value clean, maintainable code and believe in the importance of user-centered design principles.</p>
+                
+                <p>My career goal is to contribute to projects that make a positive impact on society while continuously learning and growing as a developer. I'm always excited to collaborate with like-minded professionals on challenging problems.</p>
+            </section>
+            
+            <section class="links-section">
+                <h2>Professional Links</h2>
+                <div class="links-grid">
+                    <div class="link-card">
+                        <a href="https://www.linkedin.com/in/Risana-Kelly-Siweya">
+                            <span class="link-icon">🔗</span>
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <a href="https://github.com/RKSiweya77" target="_blank">
+                            <span class="link-icon">💻</span>
+                            GitHub
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <a href="projects.html">
+                            <span class="link-icon">📚</span>
+                            My Projects
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <a href="https://dev.to/rkellysiweya77" target="_blank">
+                            <span class="link-icon">👨‍💻</span>
+                            Dev Community
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Risana Kelly Siweya. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Hidden audio element that plays automatically -->
+    <audio id="background-sound" autoplay loop>
+        <source src="sounds/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // JavaScript for additional interactivity and audio handling
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation to profile image on load
+            const profileImage = document.querySelector('.profile-image');
+            profileImage.style.opacity = '0';
+            profileImage.style.transform = 'scale(0.8)';
+            
+            setTimeout(() => {
+                profileImage.style.transition = 'opacity 0.5s, transform 0.5s';
+                profileImage.style.opacity = '1';
+                profileImage.style.transform = 'scale(1)';
+            }, 300);
+            
+            // Add subtle animation to section headers
+            const headers = document.querySelectorAll('h2');
+            headers.forEach(header => {
+                header.style.opacity = '0';
+                header.style.transform = 'translateY(-10px)';
+                
+                setTimeout(() => {
+                    header.style.transition = 'opacity 0.5s, transform 0.5s';
+                    header.style.opacity = '1';
+                    header.style.transform = 'translateY(0)';
+                }, 500);
+            });
+            
+            // Handle audio playback with user interaction requirement
+            const audio = document.getElementById('background-sound');
+            
+            // Modern browsers require user interaction before playing audio
+            // We'll set up a one-time click handler to start the audio
+            function startAudioOnInteraction() {
+                audio.play().then(() => {
+                    // Successfully started playing
+                    console.log('Audio started playing');
+                    document.removeEventListener('click', startAudioOnInteraction);
+                }).catch(error => {
+                    console.log('Audio play failed:', error);
+                });
+            }
+            
+            // Try to play immediately (may not work in all browsers)
+            audio.play().catch(error => {
+                console.log('Autoplay prevented, waiting for user interaction');
+                // If autoplay is blocked, wait for user interaction
+                document.addEventListener('click', startAudioOnInteraction);
+            });
+            
+            // Show a notification about the background music
+            const soundNotification = document.querySelector('.sound-notification');
+            setTimeout(() => {
+                soundNotification.style.transition = 'opacity 0.5s';
+                soundNotification.style.opacity = '1';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
